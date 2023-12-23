@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Academic Advising Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_login.css">
+</head>
+<body>
+
+    <form>
+
+
+        <h1>Academic Advising Login</h1>
+
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+
+        <br>
+        <div class="radio-buttons">
+            <input type="radio" id="student" name="userType" value="student">
+            <label for="student">Student</label>
+            <input type="radio" id="advisor" name="userType" value="advisor">
+            <label for="advisor">Advisor</label>
+            <input type="radio" id="unit" name="userType" value="unit">
+            <label for="unit">unit</label>
+        </div>
+        <br>
+        <a href="pages/Registration.html" id="regester-link">Register</a>
+        <br>
+        <a href="pages/Forgot Password.html" id="forgot-password-link">Forgot Password?</a>
+        <br>
+
+        <button type="submit">Login</button>
+    </form>
+    <br />
+    <br />
+    <br />
+    <br />
+    <footer>
+        <p>&copy; 2023 Academic Advising</p>
+        <!-- Other footer content can be added here -->
+    </footer>
+
+    <script src="javascript/script_login.js"></script>
+</body>
+</html>
