@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Evaluate Advisors</title>
+    <link rel="stylesheet" href="../css/style_evaluate_advisors.css">
+</head>
+<body>
+    <header>
+        <h1>Evaluate Advisors</h1>
+    </header>
+
+    <form id="evaluate-advisor-form" action="../php/process_evaluation.php" method="post">
+        <label for="name-input">Name:</label>
+        <input type="text" id="name-input" name="name-input" required>
+
+        <label for="email-input">Email:</label>
+        <input type="email" id="email-input" name="email-input" required>
+
+        <label for="advisor-input">Advisor:</label>
+        <select id="advisor-input" name="advisor-input" required>
+            <option value="">Select an advisor</option>
+            <option value="John Doe">John Doe</option>
+            <option value="Jane Smith">Jane Smith</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <label for="rating-input">Rating:</label>
+        <select id="rating-input" name="rating-input" required>
+            <option value="">Select a rating</option>
+            <option value="5">5 - Excellent</option>
+            <option value="4">4 - Good</option>
+            <option value="3">3 - Average</option>
+            <option value="2">2 - Poor</option>
+            <option value="1">1 - Terrible</option>
+        </select>
+
+        <label for="comment-input">Comment:</label>
+        <textarea id="comment-input" name="comment-input"></textarea>
+
+        <button type="submit">Submit Evaluation</button>
+    </form>
+    <footer>
+        <p>&copy; 2023 Academic Advising</p>
+        <!-- Other footer content can be added here -->
+    </footer>
+    <script src="../javascript/script_evaluate_advisors.js"></script>
+</body>
+</html>

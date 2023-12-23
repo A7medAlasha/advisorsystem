@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Inquiries</title>
+    <link rel="stylesheet" href="../css/style_create_inquiries.css">
+</head>
+<body>
+    <header>
+        <h1>Create Inquiries</h1>
+    </header>
+
+    <form id="create-inquiry-form" action="process_form.php" method="post">
+        <label for="name-input">Name:</label>
+        <input type="text" id="name-input" name="name-input" required>
+
+        <label for="email-input">Email:</label>
+        <input type="email" id="email-input" name="email-input" required>
+
+        <label for="inquiry-input">Inquiry:</label>
+        <textarea id="inquiry-input" name="inquiry-input" required></textarea>
+
+        <button type="submit">Submit Inquiry</button>
+    </form>
+    <footer>
+        <p>&copy; 2023 Academic Advising</p>
+        <!-- Other footer content can be added here -->
+    </footer>
+    <script src="../javascript/script_create_inquiries.js"></script>
+</body>
+</html>

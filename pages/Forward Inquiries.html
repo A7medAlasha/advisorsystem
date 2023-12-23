@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Forward Inquiries</title>
+    <link rel="stylesheet" href="../css/style_forward_inquiries.css">
+</head>
+<body>
+    <header>
+
+
+        <h1>Forward Inquiries</h1>
+    </header>
+    <form id="forward-inquiry-form" method="post" action="../php/forward_inquiries.php">
+        <label for="name-input">Name:</label>
+        <input type="text" id="name-input" name="name-input" required>
+
+        <label for="email-input">Email:</label>
+        <input type="email" id="email-input" name="email-input" required>
+
+        <label for="inquiry-input">Inquiry:</label>
+        <textarea id="inquiry-input" name="inquiry-input" required></textarea>
+
+        <label for="department-input">Department:</label>
+        <div id="department-input">
+            <input type="checkbox" id="department1" name="department[]" value="Department 1">
+            <label for="department1">Programing</label><br>
+            <input type="checkbox" id="department2" name="department[]" value="Department 2">
+            <label for="department2">Database</label><br>
+            <input type="checkbox" id="department3" name="department[]" value="Department 3">
+            <label for="department3">Network</label><br>
+            <!-- Add more department options as needed -->
+        </div>
+
+        <button type="submit">Forward Inquiry</button>
+    </form>
+    <footer>
+        <p>&copy; 2023 Academic Advising</p>
+        <!-- Other footer content can be added here -->
+    </footer>
+    <script src="../javascript/script_forward_inquiries.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inquiries</title>
+    <link rel="stylesheet" href="../css/inqstyles.css">
+</head>
+<body>
+    <header>
+        <h1>Inquiries</h1>
+    </header>
+    <!-- Form for students to submit inquiries -->
+    <<form id="inquiryForm" action="../php/process_inquiry.php" method="post">
+        <textarea id="inquiryText" name="inquiryText" placeholder="Type your inquiry here"></textarea>
+        <button type="submit">Submit Inquiry</button>
+    </form>
+
+
+    <!-- Display inquiries and responses -->
+    <div id="inquiriesContainer">
+        <!-- Display inquiries here -->
+    </div>
+    <footer>
+        <p>&copy; 2023 Academic Advising</p>
+        <!-- Other footer content can be added here -->
+    </footer>
+    <script src="../javascript/inqscripts.js"></script>
+</body>
+</html>

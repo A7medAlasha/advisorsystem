@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Answer Inquiries</title>
+    <link rel="stylesheet" href="../css/style_answer_inquiries.css">
+</head>
+<body>
+    <header>
+        <h1>Answer Inquiries</h1>
+    </header>
+    <form id="answer-inquiry-form" action="../php/process_responses.php" method="post">
+        <label for="name-input">Name:</label>
+        <input type="text" id="name-input" name="name-input" required>
+
+        <label for="email-input">Email:</label>
+        <input type="email" id="email-input" name="email-input" required>
+
+        <label for="inquiry-input">Inquiry:</label>
+        <textarea id="inquiry-input" name="inquiry-input" required></textarea>
+        <br />
+        <button type="button" id="answer-button">Answer Inquiry</button>
+        <button type="button" id="delete-button">Delete Inquiry</button>
+        <button type="button" id="forward-button">Forward Inquiry</button>
+        <br />
+
+
+        <!-- Additional buttons for handling inquiries -->
+
+    </form>
+    <footer>
+        <p>&copy; 2023 Academic Advising</p>
+        <!-- Other footer content can be added here -->
+    </footer>
+    <script src="../javascript/script_answer_inquiries.js"></script>
+</body>
+</html>
